@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+        <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+        <title>Calculator</title>
+    </head>
+<body>
+    <py-script src="main.py"></py-script>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm" id="wholenavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html">
+                <img src="toska.png" id="logo"> 
+            </a>
+            <ul class="navbar-nav" id="navbar">
+                <li class="nav-item">
+                    <a class="nav-link" href="homepage.html" id="text">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calculator.html" id="text">Grade Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="clubs.html" id="text">Clubs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="padding">
+        <h4 id="title">Student Grade Calculator</h4>
+        <hr>
+        <form>
+            <label for="fName">First Name:</label>
+            <input class="form-control" type="text" id="fName" placeholder="Enter your first name.">
+            <br>
+            <label for="lName">Last Name:</label>
+            <input class="form-control" type="text" id="lName" placeholder="Enter your last name.">
+        </form>
+        <br>
+        <h4>Enter your Grades:</h4>
+        <br>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <label for="subject1">Science:</label>
+                    <input class="form-control" type="number" id="subject1">
+                    <br>
+                    <label for="subject2">English:</label>
+                    <input class="form-control" type="number" id="subject2">
+                    <br>
+                    <label for="subject3">Graphic Design:</label>
+                    <input class="form-control" type="number" id="subject3">
+                </div>
+                <div class="col">
+                    <label for="subject4">Math:</label>
+                    <input class="form-control" type="number" id="subject4">
+                    <br>
+                    <label for="subject5">Film:</label>
+                    <input class="form-control" type="number" id="subject5">
+                    <br>
+                    <label for="subject6">Music:</label>
+                    <input class="form-control" type="number" id="subject6">
+                </div>
+            </div>
+        </form>
+        <br>
+        <div class="container" id="button_div">
+            <button type="button" class="btn btn-dark" id="calculate_button" py-click="calculate">Calculate</button>
+        </div>
+        <div class="container" id="output2"></div>
+    </div>
+
+    <footer id="footer">
+        <p>Calvin Garcia | 10-Topaz | © 2024 TOSKA Academy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

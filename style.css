@@ -1,0 +1,73 @@
+body {
+    font-family: "Google Sans Code", monospace;
+}
+
+#navbar {
+    justify-content: right;
+    color: white;
+}
+
+#wholenavbar {
+    background-color: black;
+}
+
+#text {
+    color: white;
+}
+
+#logo {
+    width: 60px;
+}
+
+#padding {
+    padding-top: 3%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#padding2 {
+    padding-top: 3%;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+#header {
+    text-align: center;
+    padding: 80px;
+}
+
+#title {
+    text-align: center;
+}
+
+#body {
+    padding-top: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#button_div {
+    text-align: center;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btn, #btn1, #btn2, #btn3, #calculate_button {
+    background-color: black;
+}
+
+#output2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #6c757d;
+    bottom: fixed;
+}

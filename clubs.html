@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+        <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+        <title>Homepage</title>
+    </head>
+<body>
+    <py-script src="main.py"></py-script>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-sm" id="wholenavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html">
+                <img src="toska.png" id="logo"> 
+            </a>
+            <ul class="navbar-nav" id="navbar">
+                <li class="nav-item">
+                    <a class="nav-link" href="homepage.html" id="text">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calculator.html" id="text">Grade Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="clubs.html" id="text">Clubs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="padding2">
+        <h4 id="title">Clubs</h4>
+        <hr>
+        <br>
+        <h6>Select a Club:</h6>
+        <div class="row">
+            <div class="col">
+                <button id="btn1" class="btn btn-dark btn-block" py-click="club1">Film Club</button>
+            </div>
+            <div class="col">
+                <button id="btn2" class="btn btn-dark btn-block" py-click="club2">Music Engineering Club</button>
+            </div>
+            <div class="col">
+                <button id="btn2" class="btn btn-dark btn-block" py-click="club3">Graphic Designing Club</button>
+            </div>
+        </div>
+        <br>
+        <h6>Information:</h6>
+            <div class="row">
+                <div class="col-sm-2 container" id="info">
+                </div>
+                <div class="col-sm-10 container" id="output">
+                </div>
+            </div>
+    </div>
+
+    <footer id="footer">
+        <p>Calvin Garcia | 10-Topaz | © 2024 TOSKA Academy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
